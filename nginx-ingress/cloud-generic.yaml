@@ -2,6 +2,8 @@ kind: Service
 apiVersion: v1
 metadata:
   name: ingress-nginx
+  annotations:
+    service.beta.kubernetes.io/do-loadbalancer-hostname: ""
   namespace: ingress-nginx
   labels:
     app.kubernetes.io/name: ingress-nginx
